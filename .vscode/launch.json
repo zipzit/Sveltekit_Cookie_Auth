@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Macos Special Launch via npm",
+            "type": "node",
+            "runtimeVersion": "16.9.0", // If i need to run node 4.8.7
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "special",
+                "--",
+                "--open"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "name": "Launch via npm: run dev -- --open",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "dev",
+                "--",
+                "--open"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Special Version Launch via npm: run dev -- --open",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "special",
+                "--",
+                "--open"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        }
+    ]
+}
