@@ -8,9 +8,10 @@ Start at https://kit.svelte.dev/
 
 ## Cookie, Authentication, MongoDB and Sveltekit
 
-This example came [from this stackoverflow posting,](https://stackoverflow.com/questions/69066169/how-to-implement-cookie-authentication-sveltekit-mongodb/) user Nikolas Blahušiak
+This example came [from this stackoverflow posting,](https://stackoverflow.com/questions/69066169/how-to-implement-cookie-authentication-sveltekit-mongodb/) user [Nikolas Blahušiak](https://stackoverflow.com/users/13847495/nikolas-blahu%c5%a1iak)
 
 It was inspired by this youtube video
+
     https://www.youtube.com/watch?v=P6gEnVlJPOc
     Fullstack SvelteKit ToDo App with TailWind CSS and MongoDB
     Mar 20, 2021        Brayden Girard  (46:13)
@@ -30,3 +31,5 @@ from a single application running on my local host.
 
 Note: you will need to create an account at mongodb.com, sign up for a free 
 test tier server, and enter your credentials in the file: /config/default.json
+
+Note: Many thanks to Nikolas Blahušiak for the original work here.  
