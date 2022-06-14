@@ -3,9 +3,11 @@ import * as cookie from 'cookie';
 import { v4 as uuidv4 } from 'uuid';
 import { connectToDatabase } from '$lib/db';
 
-export const post = async({ body }) => {
+export const post = async({ request }) => {
     const dbConnection = await connectToDatabase();
     const db = dbConnection.db;
+
+    body = await request.json()
 
     const user = await db.collection('testUsers').findOne({ email: body.email });
 
